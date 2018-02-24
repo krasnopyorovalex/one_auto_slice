@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Grid</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="header__sections">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /.logo -->
+                    <div class="h__contact-menu">
+                        <div class="contact__box">
+                            <div class="contact__box-city">
+                                <span>Город:</span>
+                                <div class="custom__select">
+                                    <select name="cities" id="cities">
+                                        <option value="0" selected="">Тюмень</option>
+                                        <option value="1">Москва</option>
+                                        <option value="2">Воронеж</option>
+                                        <option value="3">Симферополь</option>
+                                    </select>
+                                </div>
+                                <!-- /.custom__select -->
+                            </div>
+                            <!-- /.contact__box-city -->
+                            <div class="contact__box-address">
+                                <span>Адрес:</span>
+                                <div class="value">ул. Интернациональная, 121</div>
+                            </div>
+                            <!-- /.contact__box-address -->
+                            <div class="contact__box-phone">
+                                <a href="te:+7345288888">+7 (3452) 88-88-88</a>
+                            </div>
+                            <!-- /.contact__box-phone -->
+                        </div>
+                        <!-- /.contact__box -->
+                        <menu>
+                            <ul>
+                                <li class="active"><a href="#">Каталог автозапчастей</a></li>
+                                <li><a href="#">Запчасти для ТО</a></li>
+                                <li><a href="#">Масла и автохимия</a>
+                                    <ul>
+                                        <li><a href="#">Двигатель / комплектующие</a></li>
+                                        <li><a href="#">Охлаждение двигателя</a>
+                                            <ul>
+                                                <li><a href="#">Двигатель / комплектующие</a></li>
+                                                <li><a href="#">Охлаждение двигателя</a></li>
+                                                <li><a href="#">Ходовая / Рулевая</a></li>
+                                                <li><a href="#">Тормозная система</a></li>
+                                                <li><a href="#">Отопление / кондиционер</a></li>
+                                                <li><a href="#">Кузовщина / автостекла</a></li>
+                                                <li><a href="#">Выхлопная система</a></li>
+                                                <li><a href="#">Трансмиссия / сцепление</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Ходовая / Рулевая</a>
+                                            <ul>
+                                                <li><a href="#">Двигатель / комплектующие</a></li>
+                                                <li><a href="#">Охлаждение двигателя</a></li>
+                                                <li><a href="#">Ходовая / Рулевая</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Отопление / кондиционер</a></li>
+                                        <li><a href="#">Кузовщина / автостекла</a></li>
+                                        <li><a href="#">Выхлопная система</a></li>
+                                        <li><a href="#">Трансмиссия / сцепление</a></li>
+                                        <li><a href="#">Оптика</a></li>
+                                        <li><a href="#">Электрика</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Шины и диски</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </menu>
+                    </div>
+                    <!-- /.h__contact-menu -->
+                </div>
+                <!-- /.header__sections -->
+            </div>
+            <!-- /.wrapper -->
+        </header>
+
+        <section class="search">
+            <div class="wrapper">
+                <div class="search__box">
+                    <div class="search__box-items">
+                        <div class="find__by">
+                            <span>Искать по:</span>
+                            <ul>
+                                <li class="active" data-type="articul">артикулу (коду детали)</li>
+                                <li data-type="name">названию</li>
+                            </ul>
+                        </div>
+                        <!-- /.find__by -->
+                        <form action="#">
+                            <input type="text" placeholder="Введите артикул...">
+                            <input type="hidden" value="articul" name="type">
+                            <i class="icon__search" title="Найти"></i>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.search__box -->
+            </div>
+        </section>
+        <!-- /.search -->
+
+        <div class="wrapper">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог деталей</a></li>
+                    <li>Генератор 1-1388-00BO Wai</li>
+                </ul>
+            </div>
+            <!-- /.breadcrumbs -->
+        </div>
+
+        <section class="content">
+            <div class="wrapper">
+                <div class="items">
+                    <div class="content__sidebar">
+                        <ul>
+                            <li><a href="#">Двигатель / комплектующие</a></li>
+                            <li><a href="#">Охлаждение двигателя</a>
+                                <ul>
+                                    <li><a href="#">Двигатель / комплектующие</a></li>
+                                    <li><a href="#">Охлаждение двигателя</a>
+                                        <ul>
+                                            <li><a href="#">Двигатель / комплектующие</a></li>
+                                            <li><a href="#">Охлаждение двигателя</a></li>
+                                            <li><a href="#">Ходовая / Рулевая</a></li>
+                                            <li><a href="#">Тормозная система</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Ходовая / Рулевая</a></li>
+                                    <li><a href="#">Тормозная система</a></li>
+                                    <li><a href="#">Отопление / кондиционер</a></li>
+                                    <li><a href="#">Кузовщина / автостекла</a></li>
+                                    <li><a href="#">Выхлопная система</a></li>
+                                    <li><a href="#">Трансмиссия / сцепление</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Ходовая / Рулевая</a></li>
+                            <li><a href="#">Тормозная система</a>
+                                <ul>
+                                    <li><a href="#">Двигатель / комплектующие</a></li>
+                                    <li><a href="#">Охлаждение двигателя</a>
+                                        <ul>
+                                            <li><a href="#">Двигатель / комплектующие</a></li>
+                                            <li><a href="#">Охлаждение двигателя</a></li>
+                                            <li><a href="#">Ходовая / Рулевая</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Ходовая / Рулевая</a></li>
+                                    <li><a href="#">Тормозная система</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Отопление / кондиционер</a></li>
+                            <li><a href="#">Кузовщина / автостекла</a></li>
+                            <li><a href="#">Выхлопная система</a></li>
+                            <li><a href="#">Трансмиссия / сцепление</a></li>
+                            <li><a href="#">Оптика</a></li>
+                            <li><a href="#">Электрика</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.content__sidebar -->
+                    <div class="content__body">
+                        <h1>Генератор 1-1388-00BO Wai</h1>
+
+                        <div class="origin__numbers">
+                            <div>
+                                <div class="title">Оригинальные номера:</div>
+                                <a href="#">026903015C,</a>
+                                <a href="#">034903015M,</a>
+                                <a href="#">034903016E,</a>
+                                <a href="#">049903027A,</a>
+                                <a href="#">025903023E,</a>
+                                <a href="#">034903015K,</a>
+                                <a href="#">025903023, </a>
+                                <a href="#">034903015D,</a>
+                                <a href="#">035903017AX</a>
+                                <a href="#">025903023D,</a>
+                                <a href="#">026903017BX</a>
+                                <a href="#">035903023B,</a>
+                                <a href="#">073903023A</a>
+                            </div>
+                        </div>
+                        <!-- /.origin__numbers -->
+
+                        <div class="item__row">
+                            <div class="item__col-left">
+                                <img src="img/item_img-01.png" alt="alt">
+                            </div>
+                            <div class="item__col-right">
+                                <div class="name">WAI</div>
+                                <div class="desc">
+                                    <ul>
+                                        <li><span>Производитель:</span>	<b>Wai</b></li>
+                                        <li><span>Артикул:</span> <b>1-1388-00BO</b></li>
+                                        <li><span>Остаток:</span> <b>0 шт.</b></li>
+                                        <li><span>Штрих-код:</span> <b>1000000134742</b></li>
+                                    </ul>
+                                </div>
+                                <div class="price">
+                                    Цена:	<span>8690.00 руб.</span>
+                                </div>
+                                <div class="item__availability-btn btn__hover"><a href="#">Узнать о наличии</a></div>
+                            </div>
+                        </div>
+
+                        <form action="#" class="form__order">
+                            <div class="form__order-title">Не нашли нужной вам запчасти?</div>
+                            <div class="form__order-subtitle">Отправьте запрос на подбор, менеджер перезвонит вам через 8 минут</div>
+                            <div class="form-group name">
+                                <input type="text" placeholder="Ваше имя*">
+                            </div>
+                            <div class="form-group phone">
+                                <input type="text" placeholder="Телефон*">
+                            </div>
+                            <div class="form-group message">
+                                <textarea name="message" placeholder="Комментарий" id="message"></textarea>
+                            </div>
+                            <div class="form-group checked">
+                                <label for="agree">Согласен на обработку персональных данных
+                                    <input type="checkbox" value="0" id="agree">
+                                </label>
+                            </div>
+                            <button type="submit" class="form__order-btn btn__hover">Отправить запрос</button>
+                        </form>
+
+                    </div>
+                    <!-- /.content__body -->
+                </div>
+                <!-- /.items -->
+            </div>
+        </section>
+        <!-- /.content -->
+
+        <footer>
+            <div class="wrapper">
+                <div class="items border">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="alt">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Оформление заказа</a></li>
+                            <li><a href="#">Публичная оферт</a></li>
+                            <li><a href="#">Обработка персональных данных</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                        </ul>
+                    </div>
+                    <div class="contacts">
+                        <div class="contacts__box-phone">
+                            <a href="te:+7345288888">+7 (3452) 88-88-88</a>
+                        </div>
+                        <!-- /.contact__box-phone -->
+                        <div class="contacts__street">
+                            ул. Интернациональная, 121
+                        </div>
+                    </div>
+                </div>
+                <div class="items copyright">
+                    <div class="left">© 2017-2018</div>
+                    <div class="right"><a href="#">Создание и продвижение сайта</a></div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

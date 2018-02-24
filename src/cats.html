@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Grid</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="header__sections">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /.logo -->
+                    <div class="h__contact-menu">
+                        <div class="contact__box">
+                            <div class="contact__box-city">
+                                <span>Город:</span>
+                                <div class="custom__select">
+                                    <select name="cities" id="cities">
+                                        <option value="0" selected="">Тюмень</option>
+                                        <option value="1">Москва</option>
+                                        <option value="2">Воронеж</option>
+                                        <option value="3">Симферополь</option>
+                                    </select>
+                                </div>
+                                <!-- /.custom__select -->
+                            </div>
+                            <!-- /.contact__box-city -->
+                            <div class="contact__box-address">
+                                <span>Адрес:</span>
+                                <div class="value">ул. Интернациональная, 121</div>
+                            </div>
+                            <!-- /.contact__box-address -->
+                            <div class="contact__box-phone">
+                                <a href="te:+7345288888">+7 (3452) 88-88-88</a>
+                            </div>
+                            <!-- /.contact__box-phone -->
+                        </div>
+                        <!-- /.contact__box -->
+                        <menu>
+                            <ul>
+                                <li class="active"><a href="#">Каталог автозапчастей</a></li>
+                                <li><a href="#">Запчасти для ТО</a></li>
+                                <li><a href="#">Масла и автохимия</a>
+                                    <ul>
+                                        <li><a href="#">Двигатель / комплектующие</a></li>
+                                        <li><a href="#">Охлаждение двигателя</a>
+                                            <ul>
+                                                <li><a href="#">Двигатель / комплектующие</a></li>
+                                                <li><a href="#">Охлаждение двигателя</a></li>
+                                                <li><a href="#">Ходовая / Рулевая</a></li>
+                                                <li><a href="#">Тормозная система</a></li>
+                                                <li><a href="#">Отопление / кондиционер</a></li>
+                                                <li><a href="#">Кузовщина / автостекла</a></li>
+                                                <li><a href="#">Выхлопная система</a></li>
+                                                <li><a href="#">Трансмиссия / сцепление</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Ходовая / Рулевая</a>
+                                            <ul>
+                                                <li><a href="#">Двигатель / комплектующие</a></li>
+                                                <li><a href="#">Охлаждение двигателя</a></li>
+                                                <li><a href="#">Ходовая / Рулевая</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Отопление / кондиционер</a></li>
+                                        <li><a href="#">Кузовщина / автостекла</a></li>
+                                        <li><a href="#">Выхлопная система</a></li>
+                                        <li><a href="#">Трансмиссия / сцепление</a></li>
+                                        <li><a href="#">Оптика</a></li>
+                                        <li><a href="#">Электрика</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Шины и диски</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </menu>
+                    </div>
+                    <!-- /.h__contact-menu -->
+                </div>
+                <!-- /.header__sections -->
+            </div>
+            <!-- /.wrapper -->
+        </header>
+
+        <section class="search">
+            <div class="wrapper">
+                <div class="search__box">
+                    <div class="search__box-items">
+                        <div class="find__by">
+                            <span>Искать по:</span>
+                            <ul>
+                                <li class="active" data-type="articul">артикулу (коду детали)</li>
+                                <li data-type="name">названию</li>
+                            </ul>
+                        </div>
+                        <!-- /.find__by -->
+                        <form action="#">
+                            <input type="text" placeholder="Введите артикул...">
+                            <input type="hidden" value="articul" name="type">
+                            <i class="icon__search" title="Найти"></i>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.search__box -->
+            </div>
+        </section>
+        <!-- /.search -->
+
+        <div class="wrapper">
+            <div class="breadcrumbs">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li>Охлаждение двигателя</li>
+                </ul>
+            </div>
+            <!-- /.breadcrumbs -->
+        </div>
+
+        <section class="content">
+            <div class="wrapper">
+                <div class="items">
+                    <div class="content__sidebar">
+                        <ul>
+                            <li><a href="#">Двигатель / комплектующие</a></li>
+                            <li><a href="#">Охлаждение двигателя</a>
+                                <ul>
+                                    <li><a href="#">Двигатель / комплектующие</a></li>
+                                    <li><a href="#">Охлаждение двигателя</a>
+                                        <ul>
+                                            <li><a href="#">Двигатель / комплектующие</a></li>
+                                            <li><a href="#">Охлаждение двигателя</a></li>
+                                            <li><a href="#">Ходовая / Рулевая</a></li>
+                                            <li><a href="#">Тормозная система</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Ходовая / Рулевая</a></li>
+                                    <li><a href="#">Тормозная система</a></li>
+                                    <li><a href="#">Отопление / кондиционер</a></li>
+                                    <li><a href="#">Кузовщина / автостекла</a></li>
+                                    <li><a href="#">Выхлопная система</a></li>
+                                    <li><a href="#">Трансмиссия / сцепление</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Ходовая / Рулевая</a></li>
+                            <li><a href="#">Тормозная система</a>
+                                <ul>
+                                    <li><a href="#">Двигатель / комплектующие</a></li>
+                                    <li><a href="#">Охлаждение двигателя</a>
+                                        <ul>
+                                            <li><a href="#">Двигатель / комплектующие</a></li>
+                                            <li><a href="#">Охлаждение двигателя</a></li>
+                                            <li><a href="#">Ходовая / Рулевая</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Ходовая / Рулевая</a></li>
+                                    <li><a href="#">Тормозная система</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Отопление / кондиционер</a></li>
+                            <li><a href="#">Кузовщина / автостекла</a></li>
+                            <li><a href="#">Выхлопная система</a></li>
+                            <li><a href="#">Трансмиссия / сцепление</a></li>
+                            <li><a href="#">Оптика</a></li>
+                            <li><a href="#">Электрика</a></li>
+                            <li><a href="#">Аксессуары</a></li>
+                        </ul>
+                    </div>
+                    <!-- /.content__sidebar -->
+                    <div class="content__body">
+                        <h1>Радиаторы охлаждения двигателя</h1>
+                        <div class="auto__names">
+                            <ul>
+                                <li><a href="#">alfa romeo</a></li>
+                                <li><a href="#">audi</a></li>
+                                <li><a href="#">bmw</a></li>
+                                <li><a href="#">acura</a></li>
+                                <li><a href="#">ford</a></li>
+                                <li><a href="#">mercedes</a></li>
+                                <li><a href="#">chevrolet</a></li>
+                                <li><a href="#">honda</a></li>
+                                <li><a href="#">mazda</a></li>
+                                <li><a href="#">mitsubishi</a></li>
+                                <li><a href="#">nissan</a></li>
+                                <li><a href="#">toyota</a></li>
+                                <li><a href="#">subaru</a></li>
+                                <li><a href="#">kia</a></li>
+                                <li><a href="#">hyundai</a></li>
+                                <li><a href="#">opel</a></li>
+                                <li><a href="#">volvo</a></li>
+                                <li><a href="#">jeep</a></li>
+                                <li><a href="#">skoda</a></li>
+                                <li><a href="#">renault</a></li>
+                                <li><a href="#">ssangyong</a></li>
+                                <li><a href="#">suzuki</a></li>
+                                <li><a href="#">citroen</a></li>
+                                <li><a href="#">seat</a></li>
+                                <li><a href="#">fiat</a></li>
+                                <li><a href="#">lexus</a></li>
+                                <li><a href="#">infiniti</a></li>
+                                <li><a href="#">mini</a></li>
+                                <li><a href="#">land rover</a></li>
+                                <li><a href="#">saab</a></li>
+                                <li><a href="#">jaguar</a></li>
+                                <li><a href="#">chrysler</a></li>
+                                <li><a href="#">peugeot</a></li>
+                                <li><a href="#">smart</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="items">
+                            <div class="item">
+                                <div class="item__image">
+                                    <a href="#">
+                                        <img src="img/cat_item-img.png" alt="cat image">
+                                    </a>
+                                    <div class="item__brand">DENSO</div>
+                                    <div class="item__price">22 000 руб.</div>
+                                    <div class="item__availability-btn"><a href="#">Узнать о наличии</a></div>
+                                </div>
+                                <!-- /.item__image -->
+                                <div class="item__name">
+                                    <a href="#">Радиатор охл. ДВС LEXUS RX400H 09/05-</a>
+                                </div>
+                                <!-- /.item__name -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item">
+                                <div class="item__image">
+                                    <a href="#">
+                                        <img src="img/cat_item-img.png" alt="cat image">
+                                    </a>
+                                    <div class="item__brand">DENSO</div>
+                                    <div class="item__price">22 000 руб.</div>
+                                    <div class="item__availability-btn"><a href="#">Узнать о наличии</a></div>
+                                </div>
+                                <!-- /.item__image -->
+                                <div class="item__name">
+                                    <a href="#">Радиатор охл. ДВС LEXUS RX400H 09/05-</a>
+                                </div>
+                                <!-- /.item__name -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item">
+                                <div class="item__image">
+                                    <a href="#">
+                                        <img src="img/cat_item-img.png" alt="cat image">
+                                    </a>
+                                    <div class="item__brand">DENSO</div>
+                                    <div class="item__price">22 000 руб.</div>
+                                    <div class="item__availability-btn"><a href="#">Узнать о наличии</a></div>
+                                </div>
+                                <!-- /.item__image -->
+                                <div class="item__name">
+                                    <a href="#">Радиатор охл. ДВС LEXUS RX400H 09/05-</a>
+                                </div>
+                                <!-- /.item__name -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item">
+                                <div class="item__image">
+                                    <a href="#">
+                                        <img src="img/cat_item-img.png" alt="cat image">
+                                    </a>
+                                    <div class="item__brand">DENSO</div>
+                                    <div class="item__price">22 000 руб.</div>
+                                    <div class="item__availability-btn"><a href="#">Узнать о наличии</a></div>
+                                </div>
+                                <!-- /.item__image -->
+                                <div class="item__name">
+                                    <a href="#">Радиатор охл. ДВС LEXUS RX400H 09/05-</a>
+                                </div>
+                                <!-- /.item__name -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item">
+                                <div class="item__image">
+                                    <a href="#">
+                                        <img src="img/cat_item-img.png" alt="cat image">
+                                    </a>
+                                    <div class="item__brand">DENSO</div>
+                                    <div class="item__price">22 000 руб.</div>
+                                    <div class="item__availability-btn"><a href="#">Узнать о наличии</a></div>
+                                </div>
+                                <!-- /.item__image -->
+                                <div class="item__name">
+                                    <a href="#">Радиатор охл. ДВС LEXUS RX400H 09/05-</a>
+                                </div>
+                                <!-- /.item__name -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item">
+                                <div class="item__image">
+                                    <a href="#">
+                                        <img src="img/cat_item-img.png" alt="cat image">
+                                    </a>
+                                    <div class="item__brand">DENSO</div>
+                                    <div class="item__price">22 000 руб.</div>
+                                    <div class="item__availability-btn"><a href="#">Узнать о наличии</a></div>
+                                </div>
+                                <!-- /.item__image -->
+                                <div class="item__name">
+                                    <a href="#">Радиатор охл. ДВС LEXUS RX400H 09/05-</a>
+                                </div>
+                                <!-- /.item__name -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item">
+                                <div class="item__image">
+                                    <a href="#">
+                                        <img src="img/cat_item-img.png" alt="cat image">
+                                    </a>
+                                    <div class="item__brand">DENSO</div>
+                                    <div class="item__price">22 000 руб.</div>
+                                    <div class="item__availability-btn"><a href="#">Узнать о наличии</a></div>
+                                </div>
+                                <!-- /.item__image -->
+                                <div class="item__name">
+                                    <a href="#">Радиатор охл. ДВС LEXUS RX400H 09/05-</a>
+                                </div>
+                                <!-- /.item__name -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item">
+                                <div class="item__image">
+                                    <a href="#">
+                                        <img src="img/cat_item-img.png" alt="cat image">
+                                    </a>
+                                    <div class="item__brand">DENSO</div>
+                                    <div class="item__price">22 000 руб.</div>
+                                    <div class="item__availability-btn"><a href="#">Узнать о наличии</a></div>
+                                </div>
+                                <!-- /.item__image -->
+                                <div class="item__name">
+                                    <a href="#">Радиатор охл. ДВС LEXUS RX400H 09/05-</a>
+                                </div>
+                                <!-- /.item__name -->
+                            </div>
+                            <!-- /.item -->
+                            <div class="item">
+                                <div class="item__image">
+                                    <a href="#">
+                                        <img src="img/cat_item-img.png" alt="cat image">
+                                    </a>
+                                    <div class="item__brand">DENSO</div>
+                                    <div class="item__price">22 000 руб.</div>
+                                    <div class="item__availability-btn"><a href="#">Узнать о наличии</a></div>
+                                </div>
+                                <!-- /.item__image -->
+                                <div class="item__name">
+                                    <a href="#">Радиатор охл. ДВС LEXUS RX400H 09/05-</a>
+                                </div>
+                                <!-- /.item__name -->
+                            </div>
+                            <!-- /.item -->
+                        </div>
+                        <!-- /.items -->
+                        <div class="load__more-btn btn__hover">
+                            <span>Показать ещё 12 из 129</span>
+                        </div>
+                        <!-- /.load__more-btn -->
+
+                        <form action="#" class="form__order">
+                            <div class="form__order-title">Не нашли нужной вам запчасти?</div>
+                            <div class="form__order-subtitle">Отправьте запрос на подбор, менеджер перезвонит вам через 8 минут</div>
+                            <div class="form-group name">
+                                <input type="text" placeholder="Ваше имя*">
+                            </div>
+                            <div class="form-group phone">
+                                <input type="text" placeholder="Телефон*">
+                            </div>
+                            <div class="form-group message">
+                                <textarea name="message" placeholder="Комментарий" id="message"></textarea>
+                            </div>
+                            <div class="form-group checked">
+                                <label for="agree">Согласен на обработку персональных данных
+                                    <input type="checkbox" value="0" id="agree">
+                                </label>
+                            </div>
+                            <button type="submit" class="form__order-btn btn__hover">Отправить запрос</button>
+                        </form>
+
+                    </div>
+                    <!-- /.content__body -->
+                </div>
+                <!-- /.items -->
+            </div>
+        </section>
+        <!-- /.content -->
+
+        <footer>
+            <div class="wrapper">
+                <div class="items border">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="alt">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Оформление заказа</a></li>
+                            <li><a href="#">Публичная оферт</a></li>
+                            <li><a href="#">Обработка персональных данных</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                        </ul>
+                    </div>
+                    <div class="contacts">
+                        <div class="contacts__box-phone">
+                            <a href="te:+7345288888">+7 (3452) 88-88-88</a>
+                        </div>
+                        <!-- /.contact__box-phone -->
+                        <div class="contacts__street">
+                            ул. Интернациональная, 121
+                        </div>
+                    </div>
+                </div>
+                <div class="items copyright">
+                    <div class="left">© 2017-2018</div>
+                    <div class="right"><a href="#">Создание и продвижение сайта</a></div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Grid</title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&amp;subset=cyrillic" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="header__sections">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <!-- /.logo -->
+                    <div class="h__contact-menu">
+                        <div class="contact__box">
+                            <div class="contact__box-city">
+                                <span>Город:</span>
+                                <div class="custom__select">
+                                    <select name="cities" id="cities">
+                                        <option value="0" selected="">Тюмень</option>
+                                        <option value="1">Москва</option>
+                                        <option value="2">Воронеж</option>
+                                        <option value="3">Симферополь</option>
+                                    </select>
+                                </div>
+                                <!-- /.custom__select -->
+                            </div>
+                            <!-- /.contact__box-city -->
+                            <div class="contact__box-address">
+                                <span>Адрес:</span>
+                                <div class="value">ул. Интернациональная, 121</div>
+                            </div>
+                            <!-- /.contact__box-address -->
+                            <div class="contact__box-phone">
+                                <a href="te:+7345288888">+7 (3452) 88-88-88</a>
+                            </div>
+                            <!-- /.contact__box-phone -->
+                        </div>
+                        <!-- /.contact__box -->
+                        <menu>
+                            <ul>
+                                <li><a href="#">Каталог автозапчастей</a></li>
+                                <li class="active"><a href="#">Запчасти для ТО</a></li>
+                                <li><a href="#">Масла и автохимия</a>
+                                    <ul>
+                                        <li><a href="#">Двигатель / комплектующие</a></li>
+                                        <li><a href="#">Охлаждение двигателя</a>
+                                            <ul>
+                                                <li><a href="#">Двигатель / комплектующие</a></li>
+                                                <li><a href="#">Охлаждение двигателя</a></li>
+                                                <li><a href="#">Ходовая / Рулевая</a></li>
+                                                <li><a href="#">Тормозная система</a></li>
+                                                <li><a href="#">Отопление / кондиционер</a></li>
+                                                <li><a href="#">Кузовщина / автостекла</a></li>
+                                                <li><a href="#">Выхлопная система</a></li>
+                                                <li><a href="#">Трансмиссия / сцепление</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Ходовая / Рулевая</a>
+                                            <ul>
+                                                <li><a href="#">Двигатель / комплектующие</a></li>
+                                                <li><a href="#">Охлаждение двигателя</a></li>
+                                                <li><a href="#">Ходовая / Рулевая</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Тормозная система</a></li>
+                                        <li><a href="#">Отопление / кондиционер</a></li>
+                                        <li><a href="#">Кузовщина / автостекла</a></li>
+                                        <li><a href="#">Выхлопная система</a></li>
+                                        <li><a href="#">Трансмиссия / сцепление</a></li>
+                                        <li><a href="#">Оптика</a></li>
+                                        <li><a href="#">Электрика</a></li>
+                                        <li><a href="#">Аксессуары</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Шины и диски</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </menu>
+                    </div>
+                    <!-- /.h__contact-menu -->
+                </div>
+                <!-- /.header__sections -->
+            </div>
+            <!-- /.wrapper -->
+        </header>
+
+        <section class="search">
+            <div class="wrapper">
+                <div class="search__box">
+                    <div class="search__box-items">
+                        <div class="find__by">
+                            <span>Искать по:</span>
+                            <ul>
+                                <li class="active" data-type="articul">артикулу (коду детали)</li>
+                                <li data-type="name">названию</li>
+                            </ul>
+                        </div>
+                        <!-- /.find__by -->
+                        <form action="#">
+                            <input type="text" placeholder="Введите артикул...">
+                            <input type="hidden" value="articul" name="type">
+                            <i class="icon__search" title="Найти"></i>
+                        </form>
+                    </div>
+                </div>
+                <!-- /.search__box -->
+            </div>
+        </section>
+        <!-- /.search -->
+
+        <section class="categories">
+            <div class="wrapper">
+                <div class="items">
+                    <div class="first__column">
+                        <div class="categories__item">
+                            <img src="./img/cat_img-01.png" alt="alt">
+                            <div class="categories__item-desc">
+                                <div class="categories__item-name">Запчасти для ТО</div>
+                                <div class="categories__item-count">1 024 моделей</div>
+                            </div>
+                            <!-- /.categories__item-desc -->
+                        </div>
+                        <!-- /.categories__item -->
+                    </div>
+                    <!-- /.first_column -->
+                    <div class="second__column">
+                        <div class="first__column">
+                            <div class="categories__item">
+                                <img src="./img/cat_img-02.png" alt="alt">
+                                <div class="categories__item-desc">
+                                    <div class="categories__item-name">Автохимия</div>
+                                    <div class="categories__item-count">1 024 моделей</div>
+                                </div>
+                                <!-- /.categories__item-desc -->
+                            </div>
+                            <!-- /.categories__item -->
+                            <div class="categories__item">
+                                <img src="./img/cat_img-03.png" alt="alt">
+                                <div class="categories__item-desc">
+                                    <div class="categories__item-name">Диски</div>
+                                    <div class="categories__item-count">1 024 моделей</div>
+                                </div>
+                                <!-- /.categories__item-desc -->
+                            </div>
+                            <!-- /.categories__item -->
+                        </div>
+                        <div class="categories__item margin__left-05">
+                            <img src="./img/cat_img-04.png" alt="alt">
+                            <div class="categories__item-desc">
+                                <div class="categories__item-name">Каталог автозапчастей</div>
+                                <div class="categories__item-count">1 024 моделей</div>
+                            </div>
+                            <!-- /.categories__item-desc -->
+                        </div>
+                        <!-- /.categories__item -->
+                    </div>
+                    <!-- /.second__column -->
+                    <div class="third__column">
+                        <div class="categories__item">
+                            <img src="./img/cat_img-05.png" alt="alt">
+                            <div class="categories__item-desc">
+                                <div class="categories__item-name">Шины</div>
+                                <div class="categories__item-count">1 024 моделей</div>
+                            </div>
+                            <!-- /.categories__item-desc -->
+                        </div>
+                        <!-- /.categories__item -->
+                        <div class="categories__view-all">
+                            <a href="#">Показать <br /> все категории</a>
+                        </div>
+                        <!-- /.categories__view-all -->
+                    </div>
+                    <!-- /.third__column -->
+                </div>
+            </div>
+        </section>
+        <!-- /.categories -->
+
+        <section class="brands">
+            <div class="wrapper">
+                <div class="items">
+                    <div class="item">
+                        <img src="img/brand_audi.png" alt="alt">
+                        <ul>
+                            <li><a href="#">100 / 200 / V8</a></li>
+                            <li><a href="#">80 / 90</a></li>
+                            <li><a href="#">A1</a></li>
+                            <li><a href="#">A2</a></li>
+                            <li><a href="#">A3</a></li>
+                            <li><a href="#">A4</a></li>
+                            <li><a href="#">A5</a></li>
+                            <li><a href="#">A6</a></li>
+                            <li><a href="#">A7</a></li>
+                            <li><a href="#">A8</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="img/brand_walksvagen.png" alt="alt">
+                        <ul>
+                            <li><a href="#">AMAROK</a></li>
+                            <li><a href="#">ARTEON</a></li>
+                            <li><a href="#">BEETLE / NEW BEETLE</a></li>
+                            <li><a href="#">BORA</a></li>
+                            <li><a href="#">CADDY</a></li>
+                            <li><a href="#">CORRADO</a></li>
+                            <li><a href="#">CRAFTER</a></li>
+                            <li><a href="#">DERBY</a></li>
+                            <li><a href="#">EOS</a></li>
+                            <li><a href="#">FOX</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="img/brand_skoda.png" alt="alt">
+                        <ul>
+                            <li><a href="#">CITIGO</a></li>
+                            <li><a href="#">FABIA</a></li>
+                            <li><a href="#">FAVORIT</a></li>
+                            <li><a href="#">FELICIA</a></li>
+                            <li><a href="#">KODIAQ</a></li>
+                            <li><a href="#">OCTAVIA</a></li>
+                            <li><a href="#">RAPID</a></li>
+                            <li><a href="#">ROOMSTER</a></li>
+                            <li><a href="#">SUPERB</a></li>
+                            <li><a href="#">YETI</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="img/brand_suzuki.png" alt="alt">
+                        <ul>
+                            <li><a href="#">ALHAMBRA</a></li>
+                            <li><a href="#">ALTEA</a></li>
+                            <li><a href="#">AROSA</a></li>
+                            <li><a href="#">Ateca</a></li>
+                            <li><a href="#">CORDOBA</a></li>
+                            <li><a href="#">EXEO</a></li>
+                            <li><a href="#">IBIZA</a></li>
+                            <li><a href="#">INCA</a></li>
+                            <li><a href="#">LEON</a></li>
+                            <li><a href="#">MII</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="img/brand_opel.png" alt="alt">
+                        <ul>
+                            <li><a href="#">ADAM</a></li>
+                            <li><a href="#">AGILA</a></li>
+                            <li><a href="#">AMPERA</a></li>
+                            <li><a href="#">AMPERA-E</a></li>
+                            <li><a href="#">ANTARA</a></li>
+                            <li><a href="#">ASCONA</a></li>
+                            <li><a href="#">ASTRA</a></li>
+                            <li><a href="#">Astra K</a></li>
+                            <li><a href="#">Astra K</a></li>
+                            <li><a href="#">CASCADA</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="img/brand_ford.png" alt="alt">
+                        <ul>
+                            <li><a href="#">B-MAX</a></li>
+                            <li><a href="#">C-MAX</a></li>
+                            <li><a href="#">COUGAR</a></li>
+                            <li><a href="#">ECOSPORT</a></li>
+                            <li><a href="#">ESCORT</a></li>
+                            <li><a href="#">FIESTA</a></li>
+                            <li><a href="#">Fiesta VII</a></li>
+                            <li><a href="#">FOCUS</a></li>
+                            <li><a href="#">FUSION</a></li>
+                            <li><a href="#">GALAXY</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <img src="img/brand_audi.png" alt="alt">
+                        <ul>
+                            <li><a href="#">100 / 200 / V8</a></li>
+                            <li><a href="#">80 / 90</a></li>
+                            <li><a href="#">A1</a></li>
+                            <li><a href="#">A2</a></li>
+                            <li><a href="#">A3</a></li>
+                            <li><a href="#">A4</a></li>
+                            <li><a href="#">A5</a></li>
+                            <li><a href="#">A6</a></li>
+                            <li><a href="#">A7</a></li>
+                            <li><a href="#">A8</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="img/brand_walksvagen.png" alt="alt">
+                        <ul>
+                            <li><a href="#">AMAROK</a></li>
+                            <li><a href="#">ARTEON</a></li>
+                            <li><a href="#">BEETLE / NEW BEETLE</a></li>
+                            <li><a href="#">BORA</a></li>
+                            <li><a href="#">CADDY</a></li>
+                            <li><a href="#">CORRADO</a></li>
+                            <li><a href="#">CRAFTER</a></li>
+                            <li><a href="#">DERBY</a></li>
+                            <li><a href="#">EOS</a></li>
+                            <li><a href="#">FOX</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="img/brand_skoda.png" alt="alt">
+                        <ul>
+                            <li><a href="#">CITIGO</a></li>
+                            <li><a href="#">FABIA</a></li>
+                            <li><a href="#">FAVORIT</a></li>
+                            <li><a href="#">FELICIA</a></li>
+                            <li><a href="#">KODIAQ</a></li>
+                            <li><a href="#">OCTAVIA</a></li>
+                            <li><a href="#">RAPID</a></li>
+                            <li><a href="#">ROOMSTER</a></li>
+                            <li><a href="#">SUPERB</a></li>
+                            <li><a href="#">YETI</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="img/brand_suzuki.png" alt="alt">
+                        <ul>
+                            <li><a href="#">ALHAMBRA</a></li>
+                            <li><a href="#">ALTEA</a></li>
+                            <li><a href="#">AROSA</a></li>
+                            <li><a href="#">Ateca</a></li>
+                            <li><a href="#">CORDOBA</a></li>
+                            <li><a href="#">EXEO</a></li>
+                            <li><a href="#">IBIZA</a></li>
+                            <li><a href="#">INCA</a></li>
+                            <li><a href="#">LEON</a></li>
+                            <li><a href="#">MII</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="img/brand_opel.png" alt="alt">
+                        <ul>
+                            <li><a href="#">ADAM</a></li>
+                            <li><a href="#">AGILA</a></li>
+                            <li><a href="#">AMPERA</a></li>
+                            <li><a href="#">AMPERA-E</a></li>
+                            <li><a href="#">ANTARA</a></li>
+                            <li><a href="#">ASCONA</a></li>
+                            <li><a href="#">ASTRA</a></li>
+                            <li><a href="#">Astra K</a></li>
+                            <li><a href="#">Astra K</a></li>
+                            <li><a href="#">CASCADA</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <img src="img/brand_ford.png" alt="alt">
+                        <ul>
+                            <li><a href="#">B-MAX</a></li>
+                            <li><a href="#">C-MAX</a></li>
+                            <li><a href="#">COUGAR</a></li>
+                            <li><a href="#">ECOSPORT</a></li>
+                            <li><a href="#">ESCORT</a></li>
+                            <li><a href="#">FIESTA</a></li>
+                            <li><a href="#">Fiesta VII</a></li>
+                            <li><a href="#">FOCUS</a></li>
+                            <li><a href="#">FUSION</a></li>
+                            <li><a href="#">GALAXY</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="load__more-btn">
+                    <a href="#">Показать все модели</a>
+                </div>
+            </div>
+        </section>
+        <!-- /.brands -->
+
+        <footer>
+            <div class="wrapper">
+                <div class="items border">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="alt">
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#">Оформление заказа</a></li>
+                            <li><a href="#">Публичная оферт</a></li>
+                            <li><a href="#">Обработка персональных данных</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                        </ul>
+                    </div>
+                    <div class="contacts">
+                        <div class="contacts__box-phone">
+                            <a href="te:+7345288888">+7 (3452) 88-88-88</a>
+                        </div>
+                        <!-- /.contact__box-phone -->
+                        <div class="contacts__street">
+                            ул. Интернациональная, 121
+                        </div>
+                    </div>
+                </div>
+                <div class="items copyright">
+                    <div class="left">© 2017-2018</div>
+                    <div class="right"><a href="#">Создание и продвижение сайта</a></div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/app.min.js"></script>
+    </body>
+</html>
